@@ -1,0 +1,12 @@
+.header {
+  position: absolute;
+  top: 0; left: 0;
+  padding-block: rem(10);
+  width: 100%;
+
+  &Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}

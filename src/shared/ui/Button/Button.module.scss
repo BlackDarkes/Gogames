@@ -2,9 +2,20 @@
   padding: rem(13) rem(36);
   background-image: $buttonGradient;
   color: $mainWhite;
-}
+  border-radius: rem(25);
+  transition: $transition;
 
-.header {
-  @extend .button;
-  padding: rem(13) rem(36) !important;
+  &:focus {
+    outline: $mainRed;
+    outline-offset: rem(10);
+  }
+
+  &:active {
+    opacity: 0.8;
+    transform: translateY(rem(1));
+  }
+
+  @include hover() {
+    
+  }
 }

@@ -1,9 +1,13 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import svgr from "vite-plugin-svgr";
+import { resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 
-// https://vite.dev/config/
+const __dirname = fileURLToPath(new URL(".", import.meta.url));
+
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), svgr()],
   base: "/",
   server: {
     port: 3000,
@@ -15,16 +19,15 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         additionalData: `
-          @use "/src/styles/helpers/index.scss" as *;
-          @use "/src/styles/base/variables.scss" as *;
+          @use "/src/shared/styles/helpers/index.scss" as *;
+          @use "/src/shared/styles/base/variables.scss" as *;
         `,
       },
     },
   },
   resolve: {
     alias: {
-      "@": "./src",
-      "@/assets": "./src/assets",
+      "@": resolve(__dirname, "src")
     },
   },
 });

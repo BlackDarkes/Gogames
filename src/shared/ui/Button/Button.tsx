@@ -1,13 +1,13 @@
-import type { ReactNode } from "react";
+import { type ReactNode } from "react";
 import styles from "./Button.module.scss";
 
-interface IButton {
+interface IButtonProps {
   children: ReactNode;
   onClick?: () => void;
   ariaLabel: string;
 }
 
-export const Button = ({ children, onClick, ariaLabel }: IButton) => {
+export const Button = ({ children, onClick, ariaLabel }: IButtonProps) => {
   return (
     <button
       type="button"
