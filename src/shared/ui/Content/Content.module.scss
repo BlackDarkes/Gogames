@@ -1,0 +1,9 @@
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reverse {
+  @extend .content;
+  flex-direction: row-reverse;
+}

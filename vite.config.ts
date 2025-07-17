@@ -1,5 +1,5 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -15,16 +15,16 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         additionalData: `
-          @use "./src/styles/helpers/index.scss" as *;
-          @use "./src/styles/base/variables.scss" as *;
-        `
-      }
-    }
+          @use "/src/styles/helpers/index.scss" as *;
+          @use "/src/styles/base/variables.scss" as *;
+        `,
+      },
+    },
   },
   resolve: {
     alias: {
       "@": "./src",
-      "@/assets": "./src/assets"
-    }
-  }
-})
+      "@/assets": "./src/assets",
+    },
+  },
+});

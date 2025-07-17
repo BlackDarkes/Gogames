@@ -1,0 +1,10 @@
+.button {
+  padding: rem(13) rem(36);
+  background-image: $buttonGradient;
+  color: $mainWhite;
+}
+
+.header {
+  @extend .button;
+  padding: rem(13) rem(36) !important;
+}

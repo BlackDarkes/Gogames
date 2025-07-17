@@ -1,0 +1,23 @@
+@use "./fonts.scss" as *;
+
+button,
+label {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  color: inherit;
+}
+
+body {
+  font-family: "Josefin Sans" !important;
+}
