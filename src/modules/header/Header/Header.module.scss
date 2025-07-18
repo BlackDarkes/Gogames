@@ -4,6 +4,7 @@
   padding-block: rem(10);
   width: 100%;
   background-color: transparent;
+  z-index: $z-200;
 
   &Container {
     display: flex;

@@ -1,0 +1,70 @@
+.image {
+  position: relative;
+  width: min(100%, rem(567));
+
+  &Box {
+    position: absolute;
+    z-index: $z-200;
+
+    &1 {
+      top: rem(-22);
+      left: -4vw;
+    }
+
+    &2 {
+      bottom: rem(-30);
+      right: -6vw;
+
+      @include laptop() {
+        right: 0;
+      }
+    }
+  }
+
+  &Block {
+    position: relative;
+  }
+
+  &Circle {
+    position: absolute;
+    z-index: $z-100;
+    bottom: 0;
+    left: 10%;
+  }
+
+  &Animation {
+    position: relative;
+    width: 100%;
+    z-index: $z-200;
+
+    &Boy {
+      width: min(100%, rem(543));
+      height: auto;
+    }
+
+    &Splash {
+      position: absolute;
+      bottom: 15%;
+      left: 6vw;
+      width: min(100%, rem(472));
+      height: auto;
+      
+      @include laptop() {
+        left: 5vw;
+      }
+    }
+  }
+
+  @include tablet() {
+    display: none;
+  }
+}
+
+.imageTablet {
+  display: none;
+  width: min(100%, rem(467));
+
+  @include tablet() {
+    display: block;
+  }
+}
