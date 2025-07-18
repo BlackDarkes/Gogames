@@ -37,8 +37,6 @@
       transition: all $transition ease;
     }
 
-
-
     @include tablet() {
       @include show();
     }

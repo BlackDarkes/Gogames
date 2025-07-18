@@ -1,15 +1,15 @@
 .burgerBlock {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: min(100%, rem(490));
+  width: min(100vw, rem(490));
   height: 100vh;
   background-color: $mainWhite;
-  transform: translateX(100vw);
+  transform: translateX(100%);
   transition: 0.4s;
 
   &List {

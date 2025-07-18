@@ -19,7 +19,7 @@ export const Burger = () => {
         />
       </button>
 
-      { isOpen ? <BurgerList isOpen={isOpen} /> : "" }
+      <BurgerList isOpen={isOpen} />
     </>
   );
 };
