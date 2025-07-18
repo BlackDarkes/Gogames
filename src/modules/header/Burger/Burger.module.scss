@@ -10,6 +10,8 @@
     transition: all $transition ease;
     z-index: $z-300;
 
+    @include hide();
+
     &::before, &::after {
       content: "";
       position: absolute;
@@ -35,7 +37,7 @@
       transition: all $transition ease;
     }
 
-    @include hide();
+
 
     @include tablet() {
       @include show();
