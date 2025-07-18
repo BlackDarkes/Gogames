@@ -1,6 +1,8 @@
+@use "./function.scss" as *;
+
 $laptop: 1440.98;
 $tablet: 1024.98;
-$mobile: 768.98;
+$mobile: 767.98;
 $mobile-s: 480.98;
 
 @mixin hover() {
@@ -11,56 +13,56 @@ $mobile-s: 480.98;
   }
 
   @media (hover: none) {
-    & {
+    &:active {
       @content;
     }
   }
 }
 
 @mixin laptop() {
-  @media (width <= $laptop) {
+  @media (width <= rem($laptop)) {
     @content;
   }
 }
 
 @mixin tablet() {
-  @media (width <= $laptop) {
+  @media (width <= rem($tablet)) {
     @content;
   }
 }
 
 @mixin mobile() {
-  @media (width <= $laptop) {
+  @media (width <= rem($mobile)) {
     @content;
   }
 }
 
 @mixin mobile-s() {
-  @media (width <= $laptop) {
+  @media (width <= rem($mobile-s)) {
     @content;
   }
 }
 
 @mixin laptop-above() {
-  @media (width > $laptop) {
+  @media (width > rem($laptop)) {
     @content;
   }
 }
 
 @mixin tablet-above() {
-  @media (width > $laptop) {
+  @media (width > rem($tablet)) {
     @content;
   }
 }
 
 @mixin mobile-above() {
-  @media (width > $laptop) {
+  @media (width > rem($mobile)) {
     @content;
   }
 }
 
 @mixin mobile-s-above() {
-  @media (width > $laptop) {
+  @media (width > rem($mobile-s)) {
     @content;
   }
 }
