@@ -1,0 +1,56 @@
+.info {
+  position: relative;
+  width: min(100%, rem(518));
+
+  &Texts {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(15);
+    margin-bottom: rem(36);
+
+    &Pref {
+      display: inline-flex;
+      align-items: center;
+      column-gap: rem(30);
+      color: $darkblue;
+      font-size: rem(23);
+
+      &Arrow {
+        color: $mainWhite;
+
+        @include tablet() {
+          display: none
+        }
+      }
+    }
+
+    &Title {
+      @include fluid-text(60, 30);
+      margin-bottom: rem(20);
+      color: $mainRed;
+      line-height: rem(70);
+
+      &Price {
+        display: block;
+        color: $darkblue;
+
+        @include mobile() {
+          display: inline;
+        }
+      }
+
+      @include mobile() {
+        line-height: 100%;
+      }
+    }
+
+    &Text {
+      color: $darkPurple;
+      font-size: rem(18);
+    }
+  }
+
+  @include mobile() {
+    width: 100%;
+  }
+}

@@ -1,0 +1,23 @@
+.vr {
+  position: relative;
+  padding-block: rem(150) rem(100);
+  background-color: $mainPeach;
+  z-index: $z-100;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $accessoryPeach; 
+    opacity: 0.01;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  @include tablet() {
+    padding-block: rem(100) rem(50);
+  }
+}

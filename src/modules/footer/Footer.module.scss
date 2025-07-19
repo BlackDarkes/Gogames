@@ -1,0 +1,15 @@
+.footer {
+  padding-block: rem(25);
+  background-color: $mainPeach;
+  border-top: rem(1) solid $darkPurple;
+
+  &Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &Secure {
+    color: $darkPurple;
+  }
+}
