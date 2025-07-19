@@ -7,7 +7,7 @@ export const Footer = () => {
   return (
     <footer className={styles.footer}>
       <Container className={styles.footerContainer}>
-        <img src={ImageLogo} alt="Логотип" />
+        <img src={ImageLogo} alt="Логотип" className={styles.footerLogo} />
         <p className={styles.footerSecure}>Copyright © 2022 HEALAS.LT. All Rights Reserved.</p>
         <Icons />
       </Container>

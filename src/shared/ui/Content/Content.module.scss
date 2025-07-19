@@ -11,5 +11,8 @@
 
 .reverse {
   @extend .content;
-  flex-direction: row-reverse;
+  @include mobile() {
+    flex-direction: column;
+    row-gap: rem(35);
+  }
 }

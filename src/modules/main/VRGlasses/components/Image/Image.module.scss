@@ -1,0 +1,22 @@
+.image {
+  position: relative;
+
+  &Screen {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15vw;
+
+    @include laptop() {
+      width: 22vw;
+    }
+
+    @include mobile() {
+      width: 35vw;
+    }
+
+    @include mobile-s() {
+      width: 45vw;
+    }
+  }
+}

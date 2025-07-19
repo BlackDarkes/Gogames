@@ -8,7 +8,7 @@ export const VRGlasses = () => {
   return (
     <section className={styles.vr}>
       <Container>
-        <Content>
+        <Content isLeft={false}>
           <Image />
           <Information />
         </Content>
