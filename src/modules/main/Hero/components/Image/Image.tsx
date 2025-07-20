@@ -3,7 +3,6 @@ import ImageBox2 from "../../assets/images/box2.png";
 import ImageBoy from "../../assets/images/boy.svg";
 import ImageSplash from "../../assets/images/splash.svg";
 import ImageCircle from "../../assets/images/circle.svg";
-import ImageTablet from "../../assets/images/bannerTablet.svg";
 import { motion } from "framer-motion";
 import styles from "./Image.module.scss";
 
@@ -31,7 +30,7 @@ export const Image = () => {
               <motion.img
                 src={ImageSplash}
                 initial={{ opacity: 0, y: 0 }}
-                animate={{ y: -300, opacity: 1 }}
+                animate={{ y: -150, opacity: 1 }}
                 transition={{ delay: 1.5, duration: 1.5 }}
               />
             </div>
@@ -41,8 +40,6 @@ export const Image = () => {
           <img src={ImageBox2} alt="Геймпад" />
         </div>
       </div>
-
-      <img src={ImageTablet} alt="" className={styles.imageTablet} />
     </>
   );
 };

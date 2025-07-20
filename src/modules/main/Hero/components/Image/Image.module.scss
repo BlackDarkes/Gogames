@@ -4,20 +4,27 @@
 
   &Box {
     position: absolute;
+    width: clamp(rem(130), 20vw, rem(252));
     z-index: $z-200;
 
     &1 {
-      top: rem(-22);
-      left: -4vw;
+      top: 0;
+      left: 0;
+      transform: translate(-4vw, rem(-15));
     }
 
     &2 {
-      bottom: rem(-30);
-      right: -6vw;
+      bottom: 0;
+      right: 0;
+      transform: translate(6vw, rem(-30));
 
       @include laptop() {
-        right: 0;
+        transform: translate(0, 0);
       }
+    }
+
+    @include mobile() {
+      width: clamp(rem(130), 35vw, rem(252));
     }
   }
 
@@ -27,44 +34,75 @@
 
   &Circle {
     position: absolute;
-    z-index: $z-100;
     bottom: 0;
-    left: 10%;
+    left: 55%;
+    transform: translateX(-50%);
+    width: 30vw;
+    z-index: $z-100;
+
+    @include mobile() {
+      width: 100%;
+      left: 50%;
+    }
   }
 
   &Animation {
     position: relative;
+    display: flex;
+    justify-content: center;
     width: 100%;
     z-index: $z-200;
 
     &Boy {
-      width: min(100%, rem(543));
+      width: min(rem(543), 35vw);
       height: auto;
+
+      @include mobile() {
+        width: 100%;
+      }
     }
 
     &Splash {
       position: absolute;
-      bottom: 15%;
-      left: 6vw;
-      width: min(100%, rem(472));
+      bottom: 40%;
+      left: 40%;
+      width: min(474px, 30vw);
       height: auto;
-      
+      transform: translateX(calc(-45% + 6vw));
+
       @include laptop() {
-        left: 5vw;
+        bottom: 35%;
+        transform: translateX(calc(-55% + 11vw));
+      }
+
+      @include tablet() {
+        bottom: 25%;
+        transform: translateX(calc(-73% + 15vw));
+      }
+
+      @include mobile() {
+        left: 60%;
+        bottom: 40%;
+        width: 70vw;
+        transform: translateX(-50%);
+      }
+
+      @include mobile-s() {
+        bottom: 27%;
       }
     }
   }
 
-  @include tablet() {
-    display: none;
-  }
+  // @include tablet() {
+  //   display: none;
+  // }
 }
 
-.imageTablet {
-  display: none;
-  width: min(100%, rem(467));
+// .imageTablet {
+//   display: none;
+//   width: min(100%, rem(467));
 
-  @include tablet() {
-    display: block;
-  }
-}
+//   @include tablet() {
+//     display: block;
+//   }
+// }

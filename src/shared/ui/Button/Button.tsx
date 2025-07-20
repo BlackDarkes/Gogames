@@ -15,7 +15,9 @@ export const Button = ({ children, onClick, ariaLabel }: IButtonProps) => {
       onClick={onClick}
       className={styles.button}
       aria-label={ariaLabel}
-      whileHover={{ backgroundImage: "linear-gradient(90deg, #4499D9, #4499D9)" }}
+      whileHover={{
+        backgroundImage: "linear-gradient(90deg, #4499D9, #4499D9)",
+      }}
       transition={{ duration: 0.4, ease: "linear" }}
     >
       {children}
