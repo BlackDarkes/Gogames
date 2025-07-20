@@ -6,9 +6,10 @@ interface IButtonProps {
   children: ReactNode;
   onClick?: () => void;
   ariaLabel: string;
+  title: string;
 }
 
-export const Button = ({ children, onClick, ariaLabel }: IButtonProps) => {
+export const Button = ({ children, onClick, ariaLabel, title }: IButtonProps) => {
   return (
     <motion.button
       type="button"
@@ -19,6 +20,7 @@ export const Button = ({ children, onClick, ariaLabel }: IButtonProps) => {
         backgroundImage: "linear-gradient(90deg, #4499D9, #4499D9)",
       }}
       transition={{ duration: 0.4, ease: "linear" }}
+      title={title}
     >
       {children}
     </motion.button>

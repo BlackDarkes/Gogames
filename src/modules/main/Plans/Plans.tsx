@@ -12,7 +12,7 @@ export const Plans = () => {
       <li className={`${styles.plansItem} ${plan.active ? styles.plansItemActive : ''}`} key={plan.id}>
         { plan.active ? <div className={styles.plansItemCircle}><div className={styles.plansItemCircleSmall}><IconV/></div></div> : "" }
         <Plan plan={plan} active={plan.active} />
-        <Button ariaLabel="Выбери план">Select This Plan</Button>
+        <Button ariaLabel="Выбери план" title="Select This Plan">Select This Plan</Button>
       </li>
     ));
   };

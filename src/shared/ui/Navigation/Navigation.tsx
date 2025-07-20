@@ -9,13 +9,13 @@ export const Navigation = ({ className }: INavigationProps) => {
   return (
     <>
       <ul className={`${styles.list} ${className}`}>
-        <li><a href="/" className={styles.listLink}>Home</a></li>
-        <li><a href="/" className={styles.listLink}>About Us</a></li>
-        <li><a href="/" className={styles.listLink}>Prices</a></li>
-        <li><a href="/" className={styles.listLink}>Rules</a></li>
+        <li><a href="./" className={styles.listLink} title="Home">Home</a></li>
+        <li><a href="./" className={styles.listLink} title="About as">About Us</a></li>
+        <li><a href="./" className={styles.listLink} title="Prices">Prices</a></li>
+        <li><a href="./" className={styles.listLink} title="Rules">Rules</a></li>
       </ul>
 
-      <Button ariaLabel="Начать сейчас">Get Started Now</Button>
+      <Button ariaLabel="Начать сейчас" title="Get Started Now">Get Started Now</Button>
     </>
   );
 }
