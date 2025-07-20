@@ -23,7 +23,7 @@ export const Header = () => {
 
   return (
     <motion.header
-      animate={{ backgroundColor: isScrolled ? "#FFE6D7" : "transparent" }}
+      animate={{ backgroundColor: isScrolled ? "#FFE6D7" : "#FFE6D700" }}
       transition={{ duration: 0.4 }}
       className={styles.header}
     >

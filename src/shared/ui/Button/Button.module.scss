@@ -2,12 +2,13 @@
   padding: rem(13) rem(36);
   background-image: $buttonGradient;
   color: $mainWhite;
+  outline: rem(1) solid transparent;
+  outline-offset: rem(2);
   border-radius: rem(25);
   transition: $transition;
 
-  &:focus {
-    outline: $mainRed;
-    outline-offset: rem(10);
+  &:focus-visible {
+    outline-color: $mainRed;
   }
 
   &:active {
