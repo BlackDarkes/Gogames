@@ -8,7 +8,7 @@ interface IBurgerListProps {
 export const BurgerList = ({ isOpen }: IBurgerListProps) => {
   return (
     <div className={`${styles.burgerBlock} ${isOpen ? styles.burgerBlockActive : ""}`}>
-      <Navigation className={styles.burgerBlockList} />
+      <Navigation className={styles.burgerBlockList} tabIndex={-1} />
     </div>
   );
 }

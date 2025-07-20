@@ -7,9 +7,10 @@ interface IButtonProps {
   onClick?: () => void;
   ariaLabel: string;
   title: string;
+  tabIndex?: number;
 }
 
-export const Button = ({ children, onClick, ariaLabel, title }: IButtonProps) => {
+export const Button = ({ children, onClick, ariaLabel, title, tabIndex }: IButtonProps) => {
   return (
     <motion.button
       type="button"
@@ -21,6 +22,7 @@ export const Button = ({ children, onClick, ariaLabel, title }: IButtonProps) =>
       }}
       transition={{ duration: 0.4, ease: "linear" }}
       title={title}
+      tabIndex={tabIndex}
     >
       {children}
     </motion.button>
