@@ -1,5 +1,6 @@
 import { type ReactNode } from "react";
 import styles from "./Button.module.scss";
+import { motion } from "framer-motion";
 
 interface IButtonProps {
   children: ReactNode;
@@ -9,13 +10,15 @@ interface IButtonProps {
 
 export const Button = ({ children, onClick, ariaLabel }: IButtonProps) => {
   return (
-    <button
+    <motion.button
       type="button"
       onClick={onClick}
       className={styles.button}
       aria-label={ariaLabel}
+      whileHover={{ backgroundImage: "linear-gradient(90deg, #4499D9, #4499D9)" }}
+      transition={{ duration: 0.4, ease: "linear" }}
     >
       {children}
-    </button>
+    </motion.button>
   );
 };
