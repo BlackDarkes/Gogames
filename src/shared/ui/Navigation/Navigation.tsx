@@ -16,7 +16,7 @@ export const Navigation = ({ className, tabIndex }: INavigationProps) => {
         <li><a href="./" className={styles.listLink} tabIndex={tabIndex} title="Rules">Rules</a></li>
       </ul>
 
-      <Button ariaLabel="Начать сейчас" title="Get Started Now" tabIndex={tabIndex}>Get Started Now</Button>
+      <Button ariaLabel="Начать сейчас" title="Начать сейчас" tabIndex={tabIndex}>Get Started Now</Button>
     </>
   );
 }

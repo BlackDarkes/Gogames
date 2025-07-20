@@ -10,7 +10,7 @@ export const Image = () => {
     <div className={styles.image}>
       <motion.img
         src={ImageGearSmall}
-        alt="маленькая шестерёнка"
+        alt="Маленькая шестерёнка"
         className={`${styles.imageGear} ${styles.imageGearSmall}`}
         initial={{ rotate: 0 }}
         animate={{ rotate: 360 }}
@@ -18,7 +18,7 @@ export const Image = () => {
       />
       <motion.img
         src={ImageGearBig}
-        alt="большая шестерёнка"
+        alt="Большая шестерёнка"
         className={`${styles.imageGear} ${styles.imageGearBig}`}
         initial={{ rotate: 0 }}
         animate={{ rotate: 360 }}

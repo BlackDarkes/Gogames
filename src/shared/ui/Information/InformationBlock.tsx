@@ -32,7 +32,7 @@ export const InformationBlock = ({
         <p className={styles.infoTextsText}>{text}</p>
       </div>
 
-      { showButton ? <Button ariaLabel="начать сейчас" title="Get Started Now">Get Started Now</Button> : "" }
+      { showButton ? <Button ariaLabel="Начать сейчас" title="Get Started Now">Get Started Now</Button> : "" }
 
       {children}
     </div>

@@ -28,7 +28,7 @@ export const Header = () => {
       className={styles.header}
     >
       <Container className={styles.headerContainer}>
-        <img src={IconLogo} alt="logo" className={styles.headerLogo} />
+        <img src={IconLogo} alt="Логотип" className={styles.headerLogo} />
         <NavList />
         <Burger />
       </Container>

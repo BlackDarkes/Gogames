@@ -11,11 +11,11 @@ export const Image = () => {
     <>
       <div className={styles.image}>
         <div className={`${styles.imageBox} ${styles.imageBox1}`}>
-          <img src={ImageBox1} alt="Вр очки" />
+          <img src={ImageBox1} alt="VR очки" />
         </div>
         <div className={styles.imageBlock}>
           <div className={styles.imageCircle}>
-            <img src={ImageCircle} alt="круг" />
+            <img src={ImageCircle} alt="Круг" />
           </div>
           <div className={styles.imageAnimation}>
             <div className={styles.imageAnimationBoy}>
@@ -24,11 +24,13 @@ export const Image = () => {
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 1.5 }}
+                alt="Паренёк"
               />
             </div>
             <div className={styles.imageAnimationSplash}>
               <motion.img
                 src={ImageSplash}
+                alt="Волна"
                 initial={{ opacity: 0, y: 0 }}
                 animate={{ y: -150, opacity: 1 }}
                 transition={{ delay: 1.5, duration: 1.5 }}
