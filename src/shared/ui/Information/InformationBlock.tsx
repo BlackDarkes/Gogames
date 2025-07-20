@@ -19,7 +19,7 @@ export const InformationBlock = ({
   title,
   text,
   isArrow = false,
-  showButton = true ,
+  showButton = true,
 }: IInformationProps) => {
   return (
     <div className={styles.info}>

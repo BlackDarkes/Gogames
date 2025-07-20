@@ -1,17 +1,19 @@
+import IconV from "../../assets/V.svg?react";
 import type { IPlant } from "@/shared/types/plan.interface";
 import styles from './Plan.module.scss'
 
-export const Plan = ({ plan }: { plan: IPlant }) => {
+export const Plan = ({ plan, active }: { plan: IPlant, active: boolean }) => {
   return (
-    <li className={styles.plan}>
-      <h3>{plan.title}</h3>
-      <p>{plan.price}</p>
-      <ul>
-        <li>{plan.options.users}</li>
-        <li>{plan.options.memory}</li>
-        <li>{plan.options.email}</li>
-        <li>{plan.options.help}</li>
+    <div className={styles.plan}>
+      <h3 className={`${styles.planTitle} ${active ? styles.planTitleActive : ""}`}>{plan.title}</h3>
+      <p className={styles.planPrice}>{plan.price}</p>
+      <ul className={`${styles.options} ${active ? styles.optionsActive : ""}`}>
+        <li><IconV/> {plan.options.users}</li>
+        <li><IconV/> {plan.options.memory}</li>
+        <li><IconV/> {plan.options.email}</li>
+        <li><IconV/> {plan.options.help}</li>
+        <li><IconV/> {plan.options.users}</li>
       </ul>
-    </li>
+    </div>
   );
 };

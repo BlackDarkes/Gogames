@@ -1,3 +1,30 @@
 .plan {
-  border-radius: rem(20);
+  margin-bottom: rem(45);
+
+  &Title {
+    @include fluid-text(32, 24);
+    margin-bottom: rem(30);
+    color: $darkblue;
+
+    &Active {
+      color: $mainWhite;
+    }
+  }
+
+  &Price {
+    @include fluid-text(27, 23);
+    margin-bottom: rem(26);
+    color: $mainRed;
+  }
+
+  .options {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(25);
+    color: $darkPurple;
+
+    &Active {
+      color: $mainWhite;
+    }
+  }
 }

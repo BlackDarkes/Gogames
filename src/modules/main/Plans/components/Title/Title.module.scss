@@ -1,0 +1,17 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: auto;
+  margin-bottom: rem(30);
+
+  &Pref {
+    font-size: rem(23);
+    color: $darkblue;
+  }
+
+  &Title {
+    @include fluid-text(60, 30);
+    color: $mainRed;
+  }
+}
