@@ -17,8 +17,9 @@
       position: absolute;
       left: 0;
       width: 100%;
-      height: rem(1);
+      height: rem(2);
       background-color: black;
+      border-radius: rem(3);
       transition: all $transition ease;
     }
 
@@ -32,8 +33,9 @@
 
     &Line {
       width: 100%;
-      height: rem(1);
+      height: rem(2);
       background-color: black;
+      border-radius: rem(3);
       transition: all $transition ease;
     }
 

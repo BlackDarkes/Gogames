@@ -9,10 +9,10 @@ export const Navigation = ({ className }: INavigationProps) => {
   return (
     <>
       <ul className={`${styles.list} ${className}`}>
-        <li><a href="/">Home</a></li>
-        <li><a href="/">About Us</a></li>
-        <li><a href="/">Prices</a></li>
-        <li><a href="/">Rules</a></li>
+        <li><a href="/" className={styles.listLink}>Home</a></li>
+        <li><a href="/" className={styles.listLink}>About Us</a></li>
+        <li><a href="/" className={styles.listLink}>Prices</a></li>
+        <li><a href="/" className={styles.listLink}>Rules</a></li>
       </ul>
 
       <Button ariaLabel="Начать сейчас">Get Started Now</Button>

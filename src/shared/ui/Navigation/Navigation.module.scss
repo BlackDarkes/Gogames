@@ -3,4 +3,41 @@
   display: flex;
   column-gap: rem(52);
   color: $darkblue;
+
+  &Link {
+    position: relative;
+    outline: rem(1) solid transparent;
+    outline-offset: rem(4);
+    border-radius: rem(3);
+    transition: $transition;
+
+    &:active {
+      color: $mainRed
+    }
+
+    &:focus-visible {
+      outline-color: $mainRed;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: rem(-3);
+      left: 0;
+      width: 100%;
+      height: rem(2);
+      background: $buttonGradient;
+      scale: 0;
+      transform-origin: left;
+      transition: $transition;
+    }
+
+    @include hover() {
+      &::before {
+        scale: 1;
+        transform-origin: left;
+      }
+    }
+  }
 }
