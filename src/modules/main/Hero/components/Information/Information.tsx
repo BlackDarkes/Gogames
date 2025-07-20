@@ -14,7 +14,7 @@ export const Information = () => {
       <motion.img
         src={ImageCross}
         animate={{ rotate: 360 }}
-        transition={{ duration: 7, repeat: Infinity }}
+        transition={{ duration: 7, repeat: Infinity, ease: "linear" }}
         className={styles.infoCross}
         alt="Крест"
       />

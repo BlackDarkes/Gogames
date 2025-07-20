@@ -8,7 +8,7 @@ const __dirname = fileURLToPath(new URL(".", import.meta.url));
 
 export default defineConfig({
   plugins: [react(), svgr()],
-  base: "/",
+  base: "/Gogames/",
   server: {
     port: 3000,
     open: true,
