@@ -1,0 +1,41 @@
+.image {
+  position: relative;
+
+  &Gear {
+    position: absolute;
+    top: 10%;
+
+    &Small {
+      right: 50%;
+      top: 20%;
+
+      @include tablet() {
+        width: rem(70);
+      }
+      
+      @include mobile() {
+        width: rem(60);
+      }
+    }
+
+    &Big {
+      right: 20%;
+
+      @include tablet() {
+        width: rem(120);
+      }
+      
+      @include mobile() {
+        width: rem(90);
+      }
+    }
+  }
+
+  &Gamepad {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    translate: -50% 0;
+    width: min(80%, rem(459));
+  }
+}
