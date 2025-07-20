@@ -7,17 +7,17 @@ export const Icons = () => {
   return (
     <ul className={styles.list}>
       <li>
-        <a href="/" className={styles.listLink} title="Facebook">
+        <a href="./" className={styles.listLink} title="Facebook">
           <IconFacebook />
         </a>
       </li>
       <li>
-        <a href="/" className={styles.listLink} title="Twitter">
+        <a href="./" className={styles.listLink} title="Twitter">
           <IconTwitter />
         </a>
       </li>
       <li>
-        <a href="/" className={styles.listLink} title="Instagram">
+        <a href="./" className={styles.listLink} title="Instagram">
           <IconInstagram />
         </a>
       </li>
